@@ -1,0 +1,18 @@
+.root {
+    padding: 32px;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.title {
+    line-height: 48px;
+    margin-right: 60px;
+    margin-bottom: 0;
+}
+
+.split {
+    height: 36px;
+}
