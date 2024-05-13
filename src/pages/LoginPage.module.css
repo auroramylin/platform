@@ -44,6 +44,7 @@
 .verificationBtn {
     border-radius: 0 !important;
     padding: 0 12px !important;
+    text-transform: none !important;
 }
 
 .loginBtn {
