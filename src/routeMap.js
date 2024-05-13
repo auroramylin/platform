@@ -4,6 +4,6 @@ export const routeMap = {
     functionUsage:'/function-usage',
     contactUs:'/contact-us',
     login:'/login',
-    register:'./register',
-    personalInfo:'./personal-information'
+    register:'/register',
+    personalInfo:'/personal-information'
 }

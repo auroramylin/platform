@@ -1,0 +1,47 @@
+.root {
+    padding: 32px 60px;
+}
+
+.register {
+    padding: 32px;
+}
+
+.register .item {
+    display: flex;
+}
+
+.register .item label {
+   min-width: 146px;
+    text-align: right;
+    line-height: 48px;
+    margin-right: 8px;
+}
+
+.verification {
+    width: 100%;
+    display: flex;
+}
+
+.verification  div {
+    border-radius: 4px 0 0 4px !important;
+}
+
+.verificationBtn {
+    border-radius: 0 !important;
+    padding: 0 12px !important;
+}
+
+.registerBtn {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.registerBtn button {
+    height: 48px;
+    width: 100%;
+    margin: 120px 0 10px 0;
+}
+
+.registerCheckbox {
+    display: flex;
+}

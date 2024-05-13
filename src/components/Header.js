@@ -36,6 +36,7 @@ function Header() {
                     ))}
                 </div>
                 <a href="/login" className={styles.login}>Login</a>
+                <a href="/register" className={styles.login}>Register</a>
             </div>
             <div className={styles.content}><Typography variant="h3">Youth AI learning platform</Typography></div>
         </div>

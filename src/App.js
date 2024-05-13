@@ -7,11 +7,13 @@ import HomePage from "./pages/HomePage";
 import {routeMap} from "./routeMap";
 import CourseResources from "./pages/CourseResources";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 const router = createBrowserRouter([
     { path: routeMap.homepage, element: <HomePage/>,},
     { path: routeMap.courseResources, element: <CourseResources/> },
-    { path: routeMap.login, element: <LoginPage/> }
+    { path: routeMap.login, element: <LoginPage/> },
+    { path: routeMap.register, element: <RegisterPage/> }
 ]);
 
 function App() {
