@@ -8,12 +8,14 @@ import {routeMap} from "./routeMap";
 import CourseResources from "./pages/CourseResources";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import PersonalInformation from "./pages/PersonalInformation";
 
 const router = createBrowserRouter([
     { path: routeMap.homepage, element: <HomePage/>,},
     { path: routeMap.courseResources, element: <CourseResources/> },
     { path: routeMap.login, element: <LoginPage/> },
-    { path: routeMap.register, element: <RegisterPage/> }
+    { path: routeMap.register, element: <RegisterPage/> },
+    { path: routeMap.personalInfo, element: <PersonalInformation/> }
 ]);
 
 function App() {

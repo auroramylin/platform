@@ -37,6 +37,7 @@ function Header() {
                 </div>
                 <a href="/login" className={styles.login}>Login</a>
                 <a href="/register" className={styles.login}>Register</a>
+                <a href="/personal-information" className={styles.login}>Info</a>
             </div>
             <div className={styles.content}><Typography variant="h3">Youth AI learning platform</Typography></div>
         </div>
