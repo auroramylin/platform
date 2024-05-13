@@ -1,0 +1,26 @@
+.root {
+   padding: 32px;
+    width: 100%;
+}
+
+.title h2 {
+    margin-bottom: 80px;
+}
+
+.title p {
+    width: 40%;
+    margin-bottom: 40px;
+}
+
+.content{
+    display: flex;
+}
+
+.content :first-child {
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.content p {
+    line-height: 32px;
+}
