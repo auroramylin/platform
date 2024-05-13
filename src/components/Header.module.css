@@ -11,9 +11,10 @@
 }
 
 .login {
-    width: 30%;
+    height: 80px;
     line-height: 80px;
-    text-align: center;
+    text-decoration: none;
+    color:black;
 }
 
 .menu {

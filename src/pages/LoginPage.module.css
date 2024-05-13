@@ -1,0 +1,51 @@
+.root {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience {
+    width: 60%;
+    padding: 5% 0 0 5%;
+}
+
+.experience button {
+    margin-top: 48px;
+    height: 48px;
+}
+
+.experience h2 {
+    margin-bottom: 16px;
+}
+
+.login {
+    width: 36%;
+    padding:24px;
+}
+
+.login h2 {
+    margin-bottom: 24px;
+}
+
+.loginForm > div{
+    margin-bottom: 24px;
+}
+
+.verification {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.verification  div {
+    border-radius: 4px 0 0 4px !important;
+}
+
+.verificationBtn {
+    border-radius: 0 !important;
+    padding: 0 12px !important;
+}
+
+.loginBtn {
+    height: 48px;
+}
