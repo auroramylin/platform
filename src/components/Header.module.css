@@ -1,37 +1,76 @@
-.header {
+.container {
+    background-color: #3f51b5;
+    color: #fff;
+}
+
+.toolbar {
     display: flex;
-    width: 100%;
-    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
-
-.logo {
-    width: 10%;
-    line-height: 80px;
-}
-
-.login {
-    height: 80px;
-    line-height: 80px;
-    text-decoration: none;
-    color:black;
+.logoPlaceholder {
+    width: 100px;
+    height: 50px;
+    border-radius: 4px;
 }
 
 .menu {
     width: 60%;
+    height: 64px;
     display: flex;
     justify-content: space-between;
 }
 
-.link {
-    height: 80px;
-    line-height: 80px;
-    text-decoration: none;
-    color:black;
+.menu a {
+    height: 64px;
+    line-height: 64px;
+    padding: 0 16px;
+    text-align: center;
+    display: block;
+    width: 25%;
 }
 
-.content {
-    width: 100%;
-    height: 180px;
+.login {
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.login a {
+    color: #fff;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 16px;
     text-align: center;
+    display: block;
+    text-transform: none !important;
+}
+
+.media {
+    width: 100%;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.media img {
+    width: 100%;
+    height: auto;
+    min-height: 320px;
+    object-fit: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.media p {
+    position: absolute;
+    color:#fff;
+    right: 5%;
+    top: 30%;
 }
