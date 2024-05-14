@@ -1,0 +1,61 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+
+.catalogue {
+    height: 97%;
+    overflow-y: auto;
+    margin: 3% 0 3% 3%;
+    padding: 3%;
+}
+
+.rightContainer {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 2%;
+    margin: 0.1%;
+    padding: 1% 1% 1% 1%;
+}
+
+.introduction {
+    padding: 16px;
+}
+
+.details {
+    display: flex;
+    align-items: left;
+    padding: 16px;
+}
+
+.introductionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.appointmentButton {
+    margin-left: auto;
+}
+
+.detailsContent {
+    margin: 3%;
+    flex: 1;
+}
+
+.details img {
+    width: 40%;
+    height: auto;
+}
+
+
+.boldTypography {
+    font-weight: bold;
+}
+
+.tree{
+    max-height: 80vh;
+    overflow-y: auto;
+}
