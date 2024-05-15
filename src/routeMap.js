@@ -8,4 +8,5 @@ export const routeMap = {
     personalInfo: '/personal-information',
     textGeneratedImages: '/text-generated-images',
     imageGeneratedText: '/image-generated-text',
+    courseDetails: '/course-details'
 }

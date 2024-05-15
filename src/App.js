@@ -12,6 +12,7 @@ import PersonalInformation from "./pages/PersonalInformation";
 import ContactUsPage from "./pages/ContactUsPage";
 import TextGeneratedImages from './pages/TextGeneratedImages';
 import ImageGeneratedText from './pages/ImageGeneratedText';
+import CoursDetails from './pages/CourseDetails';
 
 const router = createBrowserRouter([
     { path: routeMap.homepage, element: <HomePage />, },
@@ -21,7 +22,9 @@ const router = createBrowserRouter([
     { path: routeMap.personalInfo, element: <PersonalInformation /> },
     { path: routeMap.contactUs, element: <ContactUsPage /> },
     { path: routeMap.textGeneratedImages, element: <TextGeneratedImages /> },
-    { path: routeMap.imageGeneratedText, element: <ImageGeneratedText /> }
+    { path: routeMap.imageGeneratedText, element: <ImageGeneratedText /> },
+    { path: `${routeMap.courseDetails}/:courseId`, element: <CoursDetails /> }
+
 ]);
 
 function App() {

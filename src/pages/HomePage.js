@@ -19,6 +19,9 @@ const HomePage = () => {
             navigate('/text-generated-images');
         } else if (title === 'Image generation image') {
             navigate('/image-generated-text');
+        } else {
+            // navigate(`/course-details/${courseId}`);
+            navigate(`/course-details/1`);
         }
     };
 
@@ -38,7 +41,7 @@ const HomePage = () => {
                 <Grid container spacing={6}>
                     {[0, 1, 2].map((index) => (
                         <Grid item key={index} xs={12} sm={6} md={4}>
-                            <CourseCard showDetail title="Course Name" />
+                            <CourseCard showDetail title="Course Name" onClick={() => handleCardClick("Course Name")} />
                         </Grid>
                     ))}
                 </Grid>
