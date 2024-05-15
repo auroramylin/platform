@@ -6,5 +6,6 @@ export const routeMap = {
     login: '/login',
     register: '/register',
     personalInfo: '/personal-information',
-    modelSelection: '/model-selection'
+    textGeneratedImages: '/text-generated-images',
+    imageGeneratedText: '/image-generated-text',
 }

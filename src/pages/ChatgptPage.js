@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import {Card, Button, Autocomplete, TextField, InputAdornment, List, ListItem, ListItemText, IconButton, TextareaAutosize } from "@mui/material";
+import React from 'react';
+import { Card, Autocomplete, TextField, InputAdornment, List, ListItem, ListItemText, Button } from "@mui/material";
 import styles from "./ChatgptPage.module.css";
 import SearchIcon from '@mui/icons-material/Search';
 import ChatgptCard from '../components/ChatgptCard';
-import SendIcon from '@mui/icons-material/Send';
-import { useNavigate } from 'react-router-dom';
 import AIText from '../components/AIText';
+import TextBox from '../components/TextBox';
 
 const searchHistory = [
     {
@@ -28,38 +27,13 @@ const searchHistory = [
 
 function ChatgptPage() {
 
-    const [inputValue, setInputValue] = useState('');
-
-    const handleInputChange = (event) => {
-        setInputValue(event.target.value);
-    };
-    const navigate = useNavigate();
-
-    const handleModelSelectionClick = () => {
-        navigate('/model-selection');
-    };
-
-    const handleSubmit = () => {
-        if (inputValue.trim() !== '') {
-            console.log('Submitted value:', inputValue);
-            // 在这里处理提交的逻辑
-            setInputValue('');
-        }
-    };
-
-    const handleKeyPress = (event) => {
-        if (event.key === 'Enter' && !event.shiftKey) {
-            event.preventDefault();
-            handleSubmit();
-        }
-    };
     return (
         <React.Fragment>
             <div className={styles.container}>
                 {/* left card */}
                 <Card>
                     <div className={styles.buttonWrapper}>
-                        <Button className={styles.button} onClick={handleModelSelectionClick} variant="outlined">Model Selection</Button>
+                        <Button className={styles.button} variant="outlined">Model Selection</Button>
                     </div>
                     <div className={styles.searchWrapper}>
                         <Autocomplete
@@ -95,27 +69,12 @@ function ChatgptPage() {
                     </div>
                 </Card>
                 {/* right card */}
-                <Card className={styles.mainSection}>
+                <Card>
                     <AIText />
                     <ChatgptCard searchHistory={searchHistory} />
                     {/* text box */}
-                    <div className={styles.textAreaDiv}>
-                        <TextareaAutosize
-                            className={styles.textArea}
-                            value={inputValue}
-                            onChange={handleInputChange}
-                            onKeyPress={handleKeyPress}
-                            placeholder="Please Enter"
-                            minRows={1}
-                            maxRows={4}
-                        />
-                        {inputValue.trim() !== '' && (
-                            <InputAdornment position="end" className={styles.inputAdornment}>
-                                <IconButton onClick={handleSubmit} edge="end" color="primary">
-                                    <SendIcon />
-                                </IconButton>
-                            </InputAdornment>
-                        )}
+                    <div className={styles.textBoxWrapper}>
+                        <TextBox />
                     </div>
                 </Card>
             </div>

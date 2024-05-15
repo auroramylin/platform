@@ -10,7 +10,8 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import PersonalInformation from "./pages/PersonalInformation";
 import ContactUsPage from "./pages/ContactUsPage";
-import ModelSelection from './components/ModelSelection';
+import TextGeneratedImages from './pages/TextGeneratedImages';
+import ImageGeneratedText from './pages/ImageGeneratedText';
 
 const router = createBrowserRouter([
     { path: routeMap.homepage, element: <HomePage />, },
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
     { path: routeMap.register, element: <RegisterPage /> },
     { path: routeMap.personalInfo, element: <PersonalInformation /> },
     { path: routeMap.contactUs, element: <ContactUsPage /> },
-    { path: routeMap.modelSelection, element: <ModelSelection /> }
+    { path: routeMap.textGeneratedImages, element: <TextGeneratedImages /> },
+    { path: routeMap.imageGeneratedText, element: <ImageGeneratedText /> }
 ]);
 
 function App() {

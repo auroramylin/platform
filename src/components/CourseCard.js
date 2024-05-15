@@ -1,12 +1,12 @@
 import * as React from 'react';
 import Typography from "@mui/material/Typography";
-import {Button, Card, CardContent} from "@mui/material";
+import { Button, Card, CardContent } from "@mui/material";
 import styles from './CourseCard.module.css';
 
-function CourseCard({showDetail,title}) {
+function CourseCard({ showDetail, title, onClick }) {
     return (
         <div>
-            <Card className={styles.card}>
+            <Card className={styles.card} onClick={onClick}>
                 <img className={styles.img}></img>
                 <div className={styles.content}>
                     <CardContent className={styles.cardContent}>
@@ -15,7 +15,7 @@ function CourseCard({showDetail,title}) {
                         </Typography>
                         {showDetail && <Typography variant="body2" color="textSecondary" component="p">
                             Course Introduction
-                        </Typography> }
+                        </Typography>}
                     </CardContent>
                     {showDetail && <div className={styles.cardActions}>
                         <Typography variant="body2" color="textSecondary" className={styles.text}>
@@ -24,7 +24,7 @@ function CourseCard({showDetail,title}) {
                         <Button size="small" variant="outlined" className={styles.button}>
                             MAKE AN APPOINTMENT
                         </Button>
-                    </div> }
+                    </div>}
                 </div>
             </Card>
         </div>
