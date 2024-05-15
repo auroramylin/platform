@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { Typography, Card, Button, Autocomplete, TextField, InputAdornment, List, ListItem, ListItemText, IconButton, TextareaAutosize } from "@mui/material";
+import {Card, Button, Autocomplete, TextField, InputAdornment, List, ListItem, ListItemText, IconButton, TextareaAutosize } from "@mui/material";
 import styles from "./ChatgptPage.module.css";
 import SearchIcon from '@mui/icons-material/Search';
 import ChatgptCard from '../components/ChatgptCard';
 import SendIcon from '@mui/icons-material/Send';
-
-
-const content = 'As your intelligent partner, I can not only write copy and come up with ideas, but also chat and answer questions with you. Want to know what else I can do? Click here to get started quickly! You can collect the official website address of ERNIE Bot in the browser, which will be more efficient next time ~';
+import { useNavigate } from 'react-router-dom';
+import AIText from '../components/AIText';
 
 const searchHistory = [
     {
@@ -34,6 +33,11 @@ function ChatgptPage() {
     const handleInputChange = (event) => {
         setInputValue(event.target.value);
     };
+    const navigate = useNavigate();
+
+    const handleModelSelectionClick = () => {
+        navigate('/model-selection');
+    };
 
     const handleSubmit = () => {
         if (inputValue.trim() !== '') {
@@ -53,9 +57,9 @@ function ChatgptPage() {
         <React.Fragment>
             <div className={styles.container}>
                 {/* left card */}
-                <Card className={styles.modelSection}>
+                <Card>
                     <div className={styles.buttonWrapper}>
-                        <Button className={styles.button} variant="outlined">Model Selection</Button>
+                        <Button className={styles.button} onClick={handleModelSelectionClick} variant="outlined">Model Selection</Button>
                     </div>
                     <div className={styles.searchWrapper}>
                         <Autocomplete
@@ -92,12 +96,7 @@ function ChatgptPage() {
                 </Card>
                 {/* right card */}
                 <Card className={styles.mainSection}>
-                    <Typography className={styles.boldTypography} fontWeight='bold' margin='2%' variant="h5" component="h2">Hello, I am a teenage AI</Typography>
-                    <div className={styles.textContent}>
-                        <Typography variant="body1" component="body1">
-                            {content}
-                        </Typography>
-                    </div>
+                    <AIText />
                     <ChatgptCard searchHistory={searchHistory} />
                     {/* text box */}
                     <div className={styles.textAreaDiv}>

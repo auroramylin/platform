@@ -1,0 +1,7 @@
+.textContent {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    text-indent: 0;
+    margin: 2%;
+}

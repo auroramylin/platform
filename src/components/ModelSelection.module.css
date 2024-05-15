@@ -1,0 +1,77 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 80vh;
+    margin: 2%;
+    gap: 1%;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+.button {
+    width: 95%;
+}
+
+.divider {
+    margin: 5% 2% 5% 2%;
+}
+
+.buttons {
+    width: 90%;
+}
+
+.buttonDiv {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modelSelectionButton {
+    padding: 6px 16px;
+    /* 设置与默认按钮相同的padding */
+}
+
+.modelButton {
+    padding: 6px 16px;
+    /* 设置与默认按钮相同的padding */
+}
+
+.textArea {
+    margin: 3%;
+    display: flex;
+    grid-template-columns: 3fr 1fr 3fr;
+}
+
+.textField {
+    width: 50vh;
+}
+
+.textFieldInput {
+    background-color: lightgray;
+}
+
+.generateButton {
+    margin: 15% 4% 15% 4%;
+}
+
+.img {
+    display: block;
+    width: 50vh;
+    background-color: lightgray;
+}
+
+.placeholderText {
+    color: #888;
+    font-size: 16px;
+}
+
+.leftCard {}
+
+.rightCard {}

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './HomePage.module.css';
 import {Grid, Typography, Tabs, Tab} from '@mui/material';
 import CourseCard from "../components/CourseCard";
+import ChatgptPage from './ChatgptPage';
 
 const HomePage = () => {
     const [value, setValue] = React.useState(0);
@@ -40,7 +41,7 @@ const HomePage = () => {
                 </Grid>
             </div>
 
-            <div role="tabpanel" hidden={value !== 1}>chatgpt</div>
+            <div role="tabpanel" hidden={value !== 1}><ChatgptPage /></div>
 
         </div>
     );
